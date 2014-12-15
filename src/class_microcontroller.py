@@ -6,3 +6,5 @@ class Microcontroller(object):
         self.Name = name
         self.Nr_Of_Ports = nr_of_ports
         self.Nr_Of_Outputs = nr_of_outputs
+
+    def define_outputs(self, port, nr_of_outputs):
