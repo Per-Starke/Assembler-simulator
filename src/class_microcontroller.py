@@ -1,1 +1,3 @@
-print("This is the microcontroller-class")
+# 15.12.14 Per Starke
+
+class microcontroller(object)
