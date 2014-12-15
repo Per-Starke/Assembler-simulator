@@ -9,7 +9,3 @@ class Port(object):
 
     def nr_of_outputs_of_port(self):
         return self.Nr_of_outputs_of_port
-#
-# PortD = Port("PortD", 8)
-# PortD.Nr_of_outputs_of_port -= 2
-# print(PortD.Nr_of_outputs_of_port)
