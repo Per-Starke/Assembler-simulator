@@ -7,4 +7,5 @@ class Microcontroller(object):
         self.Nr_Of_Ports = nr_of_ports
         self.Nr_Of_Outputs = nr_of_outputs
 
+    list_of_possible_ports = ["PortB", "PortC", "PortD"]
     def define_outputs(self, port, nr_of_outputs):
