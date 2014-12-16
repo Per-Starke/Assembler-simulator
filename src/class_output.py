@@ -1,35 +1,33 @@
 __author__ = 'Per'
 
-def get_binary_code():
-        binary_code = "00000001"
-        if len(binary_code) == 8:
+
+def get_binary_code():             # that function will change again when scanning the assembler works
+        binary_code = "00000001"        # it returns a binary number AS A STRING!
+        if len(binary_code) == 8:        # binary number's lenghts must be 8! I'm working with 8-bit
             return binary_code
 
 
-
-class Output(object):
+class Output(object):                               # one output in the port's
     def __init__(self, number_in_port):
-        self.Number_in_port = number_in_port
+        self.Number_in_port = number_in_port        # has a number in the port, e.g. PortB0, PortC4, PortD5 etc.
 
 
+    def number_in_port(self):                       # returns the number_in_port
+        return self.Number_in_port
 
-    def get_strom_an_oder_aus(self):
-        binary_code = get_binary_code()
-        number_of_output = self.Number_in_port
-        binary_number_for_output =   int(binary_code[number_of_output])
-        if binary_number_for_output == 1:
-            stromAn = True
-        elif binary_number_for_output == 0:
-            stromAn = False
-        else:
-            stromAn = None
+    def get_strom_an_oder_aus(self):                # does the binary number tell THIS output to be on or off?
+        binary_code = get_binary_code()             # call's get_binary_code
+        binary_number_for_output =   int(binary_code[self.Number_in_port])  # get's the number of the binary code (0/1) for the output
+        if binary_number_for_output == 1:           # if number is one
+            stromAn = True                          # electrizity is turned on
+        elif binary_number_for_output == 0:         # if it's 0
+            stromAn = False                         # it's turned off
+        else:                                       # else...
+            stromAn = None                          # the binary number is wrong. binary only contains 0 and 1
             print("invalid binary number")
 
-        print ("Energy at output" , self.Number_in_port , ":" , stromAn)
-        return stromAn
+        print ("Electrizity at output" , self.Number_in_port , ":" , stromAn)        # tells whether electrizity is turned on or off
+        return stromAn                              # returns a boolean
 
 
 
-
-output1 = Output(7)
-output1.get_strom_an_oder_aus()
