@@ -22,7 +22,7 @@ class Port(object):             # one of the port's of the microcontroller
             counter += 1
         return list_of_outputs
 
-    def get_electrizity_turned_on_or_off_for_list_of_outputs_of_ports(self):       # get's whether the elec. is turned on or off for the whole list of outputs
+    def get_electrizity_turned_on_or_off_for_list_of_outputs_of_ports(self):       # get's whether the electricity is turned on or off for the whole list of outputs
         list_of_outputs_of_port = self.define_list_of_outputs()                    # list of outputs uses define list of outputs to create a list with the Port's outputs
         counter = 0
         list_of_outputs_electrizity_on_or_off = []
