@@ -35,6 +35,6 @@ print("\n")
 y = PortB.get_electrizity_turned_on_or_off_for_list_of_outputs_of_ports()
 print("\n")
 print(y)
-
+print("\n")
 list = Atmega_controller.get_electrizity_on_or_off_for_every_port()
 print(list)
