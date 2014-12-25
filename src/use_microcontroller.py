@@ -32,6 +32,6 @@ Atmega_controller = Microcontroller("Crumb168 V2.3 AVR ATmega Modul", listOfPort
 # print("\n")
 # print(y)
 
-list = Atmega_controller.get_electrizity_on_or_off_for_every_port()
+dict_of_electricity_on_or_off_for_every_port = Atmega_controller.get_electrizity_on_or_off_for_every_port()
 
-print(list)
+print(dict_of_electricity_on_or_off_for_every_port)
