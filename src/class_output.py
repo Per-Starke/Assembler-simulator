@@ -15,18 +15,17 @@ class Output(object):                               # one output in the port's
     def number_in_port(self):                       # returns the number_in_port
         return self.Number_in_port
 
-    def get_strom_an_oder_aus(self):                # does the binary number tell THIS output to be on or off?
-        binary_code = get_binary_code()             # call's get_binary_code
+    def get_strom_an_oder_aus(self):                                        # does the binary number tell THIS output to be on or off?
+        binary_code = get_binary_code()                                     # call's get_binary_code
         binary_number_for_output =   int(binary_code[self.Number_in_port])  # get's the number of the binary code (0/1) for the output
-        if binary_number_for_output == 1:           # if number is one
-            stromAn = True                          # electrizity is turned on
-        elif binary_number_for_output == 0:         # if it's 0
-            stromAn = False                         # it's turned off
-        else:                                       # else...
-            stromAn = None                          # the binary number is wrong. binary only contains 0 and 1
+        if binary_number_for_output == 1:                                   # if number is one
+            stromAn = True                                                  # electrizity is turned on
+        elif binary_number_for_output == 0:                                 # if it's 0
+            stromAn = False                                                 # it's turned off
+        else:                                                               # else...
+            stromAn = None                                                  # the binary number is wrong. binary only contains 0 and 1
             print("invalid binary number")
 
-        print ("Electrizity at output" , self.Number_in_port , ":" , stromAn)        # tells whether electrizity is turned on or off
         return stromAn                              # returns a boolean
 
 

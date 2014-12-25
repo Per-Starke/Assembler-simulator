@@ -7,7 +7,7 @@ class Port(object):             # one of the port's of the microcontroller
         self.Port_name = port_name                      # has a name (PortB, PortC, PortD etc.)
         self.Nr_of_outputs_of_port = nr_of_outputs_of_port  # and a number of outputs (max. 8)
 
-    def name(self):             #returns the name
+    def name(self):                      # returns the name
         return self.Name
 
     def nr_of_outputs_of_port(self):            # returns the number of outputs
@@ -17,7 +17,7 @@ class Port(object):             # one of the port's of the microcontroller
         counter = 0                             # counter to tell which number the Output will receive to number all way through
         list_of_outputs = []                    # the empty list of the outputs
         for i in range(0, self.Nr_of_outputs_of_port):      # for every output (range 0 to number of outputs)...
-            output = Output(counter)                        # output is an Output with number counter
+            output = Output(counter)                        # output is an Output with number "counter"
             list_of_outputs.append(output)                  # add this output to the list of outputs
             counter += 1
         return list_of_outputs
