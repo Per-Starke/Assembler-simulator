@@ -2,9 +2,12 @@ __author__ = 'Per'
 
 
 def get_binary_code():             # that function will change again when scanning the assembler works
-        binary_code = "00000001"        # it returns a binary number AS A STRING!
+        binary_code = "000000 11"        # it returns a binary number AS A STRING!
         if len(binary_code) == 8:        # binary number's lenghts must be 8! I'm working with 8-bit
             return binary_code
+        else:
+            print("W R O N G    B I N A R Y    N U M B E R")
+            return "00000000"
 
 
 class Output(object):                               # one output in the port's
