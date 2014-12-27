@@ -3,8 +3,9 @@ from class_output import Output
 
 
 class Port(object):             # one of the port's of the microcontroller
-    def __init__(self, port_name,  nr_of_outputs_of_port):
+    def __init__(self, port_name, port_nr,  nr_of_outputs_of_port):
         self.Port_name = port_name                      # has a name (PortB, PortC, PortD etc.)
+        self.Port_nr = port_nr
         self.Nr_of_outputs_of_port = nr_of_outputs_of_port  # and a number of outputs (max. 8)
 
     def name(self):                      # returns the name
@@ -26,6 +27,7 @@ class Port(object):             # one of the port's of the microcontroller
         list_of_outputs_of_port = self.define_list_of_outputs()                    # list of outputs uses define list of outputs to create a list with the Port's outputs
         counter = len(list_of_outputs_of_port)-1
         list_of_outputs_electrizity_on_or_off = []
+
         for output in list_of_outputs_of_port:                                         # for every output in the list of outputs (classes!)
             onOrOff = list_of_outputs_of_port[counter].get_strom_an_oder_aus()                   # get's whether electrizity is turned on or off
             counter -= 1

@@ -4,13 +4,13 @@ from class_port import Port
 from class_output import Output
 
 
-PortB = Port("PortB", 8)
+PortB = Port("PortB", 1, 8)
 
 PortB_outputs = PortB.define_list_of_outputs()
-PortC = Port("PortC", 6)
+PortC = Port("PortC", 2, 6)
 
 PortC_outputs = PortC.define_list_of_outputs()
-PortD = Port("PortD", 6)
+PortD = Port("PortD", 3, 6)
 
 PortD_outputs = PortD.define_list_of_outputs()
 listOfPorts = [PortB, PortC, PortD]
