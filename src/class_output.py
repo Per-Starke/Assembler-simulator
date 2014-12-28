@@ -23,7 +23,7 @@ class Output(object):                               # one output in the port's
 
     def get_strom_an_oder_aus(self, number):                                        # does the binary number tell THIS output to be on or off?
         binary_code_list = get_binary_code()
-        binar_code = binary_code_list[number]
+        binary_code = binary_code_list[number]
                                              # call's get_binary_code
         binary_number_for_output =   int(binary_code[self.Number_in_port])  # get's the number of the binary code (0/1) for the output
         if binary_number_for_output == 1:                                   # if number is one
