@@ -29,7 +29,7 @@ class Port(object):             # one of the port's of the microcontroller
         list_of_outputs_electrizity_on_or_off = []
 
         for output in list_of_outputs_of_port:                                         # for every output in the list of outputs (classes!)
-            onOrOff = list_of_outputs_of_port[counter].get_strom_an_oder_aus(0)                   # get's whether electrizity is turned on or off
+            onOrOff = list_of_outputs_of_port[counter].get_strom_an_oder_aus(self.Port_nr)                   # get's whether electrizity is turned on or off
             counter -= 1
             list_of_outputs_electrizity_on_or_off.append(onOrOff)
         return list_of_outputs_electrizity_on_or_off
