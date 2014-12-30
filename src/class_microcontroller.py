@@ -4,8 +4,9 @@ from class_port import Port
 
 class Microcontroller(object):
 
-    def __init__(self, name, list_of_ports):
+    def __init__(self, name, code,  list_of_ports):
         self.Name = name
+        self.Code = code
         self.List_of_ports = list_of_ports
 
     def get_electrizity_on_or_off_for_every_port(self):
