@@ -2,9 +2,9 @@ __author__ = 'Per'
 
 
 def get_binary_code():             # that function will change again when scanning the assembler works
-        binary_code = "10000011"    # it returns a binary number AS A STRING!
-        binary_code2 = "00000001"
-        binary_code3 = "01010101"
+        binary_code = "11001100"  # it returns a binary number AS A STRING!
+        binary_code2 = "11110000"
+        binary_code3 = "00000111"
         list_of_binary_codes = [binary_code, binary_code2, binary_code3]
         if len(binary_code) == 8 & len(binary_code2) == 8 & len(binary_code3) == 8:        # binary number's lenghts must be 8! I'm working with 8-bit
             return list_of_binary_codes
