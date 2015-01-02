@@ -1,3 +1,3 @@
 __author__ = 'Per'
 
-registers = ["12", "24", "42"] # Assembler sourcecode in numbers
+registers = ["7", "24", "42"] # Assembler sourcecode in numbers
