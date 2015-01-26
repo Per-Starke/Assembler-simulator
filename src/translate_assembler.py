@@ -1,6 +1,7 @@
 __author__ = 'Per'
 
 from binary_class import Binary
+from class_microcontroller import Microcontroller
 
 def binary_number_into_eight_bit(binary_number):
     new_binary_number = []

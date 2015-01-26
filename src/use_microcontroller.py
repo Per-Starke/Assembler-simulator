@@ -15,9 +15,9 @@ PortD = Port("PortD", 2, 6)
 PortD_outputs = PortD.define_list_of_outputs()
 listOfPorts = [PortB, PortC, PortD]
 
+dict_of_registers = {"r16" : "00000000", "r17" : "00000000", "r18" : "00000000", "r19" : "00000000", "r20" : "00000000", "r21": "00000000"}
 
-
-Atmega_controller = Microcontroller("Crumb168 V2.3 AVR ATmega Modul", "m168def.inc", listOfPorts)  # definiert Atmega_controller mit Port B, C und D
+Atmega_controller = Microcontroller("Crumb168 V2.3 AVR ATmega Modul", "m168def.inc", listOfPorts, )  # definiert Atmega_controller mit Port B, C und D
 
 
 dict_of_electricity_on_or_off_for_every_port = Atmega_controller.get_electrizity_on_or_off_for_every_port()
