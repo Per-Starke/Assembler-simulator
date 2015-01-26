@@ -1,0 +1,33 @@
+[horizontal]
+rjmp:: 1
+kriegt: Sprungziel
+
+rcall:: 2
+kriegt: Sprungziel (braucht: Aufruf-position um "ret" zu geben)
+
+ret:: 3
+braucht: Aufruf-position von rcall
+
+dec:: 4
+kriegt: Register
+
+inc:: 5
+kriegt: Register
+
+mov:: 6
+kriegt: Register_1, Register_2 (1 -> 2)
+
+ldi:: 7
+kriegt: Register, Binärzahl (bina -> reg)
+
+out:: 8
+kriegt: Port, Register
+
+set jump label (:)::  9
+kriegt: Name
+braucht: Position
+
+comment (;):: 10
+
+.include:: 11
+kriegt: 

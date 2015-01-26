@@ -19,5 +19,6 @@ new_bina = binary_number_into_eight_bit(binary_number)
 print(new_bina)
 
 
-
 registers = ["7", "24", "42"] # assembler sourcecode in numbers
+
+def ldi(register, binary_number):   # number = 7
