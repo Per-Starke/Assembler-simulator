@@ -30,4 +30,4 @@ braucht: Position
 comment (;):: 10
 
 .include:: 11
-kriegt: 
+kriegt: Code des Mikrokontrollers
