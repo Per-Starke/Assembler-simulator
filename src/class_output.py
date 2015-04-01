@@ -17,7 +17,7 @@ class Output(object):                               # one output in the port's
     def number_in_port(self):                       # returns the number_in_port
         return self.Number_in_port
 
-    def get_strom_an_oder_aus(self):                # does the binary number tell THIS output to be on or off?
+    def get_strom_an_oder_aus(self):                # tells this output whether it's 1 or 0 (falling bacuk upon binary number)
         binary_code = get_binary_code()             # call's get_binary_code
         binary_number_for_output =   int(binary_code[self.Number_in_port])  # get's the number of the binary code (0/1) for the output
         if binary_number_for_output == 1:           # if number is one
