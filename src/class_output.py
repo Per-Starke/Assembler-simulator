@@ -29,7 +29,7 @@ class Output(object):                               # one output in the port's
             print("invalid binary number")
 
         print ("Electrizity at output" , self.Number_in_port , ":" , stromAn)        # tells whether electrizity is turned on or off
-        return stromAn                              # returns a boolean
+        return stromAn                              # returns a boolean for StromAn
 
 
 
