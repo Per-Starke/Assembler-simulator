@@ -10,7 +10,7 @@ output7.get_strom_an_oder_aus()   # ist der Strom bei output1 an oder aus?
 PortB = Port("PortB", 8)          # PortB hat 8 Ausgänge
 
 PortB_outputs = PortB.define_list_of_outputs()
-PortC = Port("PortC", 6)          # PortC hat 6 Ausgänge
+PortC = Port("PortC", 8)          # PortC hat 6 Ausgänge
 
 PortC_outputs = PortC.define_list_of_outputs()
 PortD = Port("PortD", 6)          # PortD hat 6 Ausgänge

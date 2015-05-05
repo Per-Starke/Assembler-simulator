@@ -16,7 +16,7 @@ class Port(object):             # one of the port's of the microcontroller
     def define_list_of_outputs(self):           # makes a list of the outputs (type: class/Output)
         counter = 0                             # counter to tell which number the Output will receive to number all way through
         list_of_outputs = []                    # the empty list of the outputs
-        for i in range(0, self.Nr_of_outputs_of_port):      # for every output (range 0 to number of outputs)...
+        for _ in range(0, self.Nr_of_outputs_of_port):      # for every output (range 0 to number of outputs)...
             output = Output(counter)                        # output is an Output with number counter
             list_of_outputs.append(output)                  # add this output to the list of outputs
             counter += 1
