@@ -7,11 +7,11 @@ from class_output import Output
 PortB = Port("PortB", 0, 8)
 
 PortB_outputs = PortB.define_list_of_outputs()
-<<<<<<< HEAD
+
 PortC = Port("PortC", 8)          # PortC hat 6 Ausgänge
-=======
+
 PortC = Port("PortC", 1, 6)
->>>>>>> d9f1d9a9a2fc46f315e529489df850d3c922cff6
+
 
 PortC_outputs = PortC.define_list_of_outputs()
 PortD = Port("PortD", 2, 6)

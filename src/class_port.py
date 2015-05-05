@@ -5,9 +5,9 @@ from class_output import Output
 class Port(object):             # one of the port's of the microcontroller
     def __init__(self, port_name, port_nr,  nr_of_outputs_of_port):
         self.Port_name = port_name                      # has a name (PortB, PortC, PortD etc.)
-<<<<<<< HEAD
+
         self.Nr_of_outputs_of_port = nr_of_outputs_of_port  # and a number of outputs (max. 8 due to 8bit)
-=======
+
         self.Port_nr = port_nr
         self.Nr_of_outputs_of_port = nr_of_outputs_of_port  # and a number of outputs (max. 8)
 >>>>>>> d9f1d9a9a2fc46f315e529489df850d3c922cff6
